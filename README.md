@@ -13,6 +13,8 @@ boxplot(fare~pclass,data= titanic_dataset, main="Fare vs Pclass",xlab="Class",yl
 b. Is there any association with Passenger class and gender?
 Note – Show a stacked bar chart
 
+No, there is no association with Pclass and Gender
+
 library(ggplot2)
 ggplot(titanic_dataset, aes(x = pclass, fill = factor(sex))) +
   geom_bar(stat='Count', position='stack') +
